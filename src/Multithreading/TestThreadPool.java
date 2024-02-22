@@ -9,8 +9,8 @@ public class TestThreadPool {
         for (int i = 0; i < 10; i++) {
             Runnable worker = new WorkerThread("" + i);
             executor.execute(worker);//calling execute method of ExecutorService
+            executor.shutdown();
         }
-        executor.shutdown();
         while (!executor.isTerminated()) {   }
 
         System.out.println("Finished all threads");
