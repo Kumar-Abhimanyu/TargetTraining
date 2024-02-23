@@ -1,7 +1,6 @@
 package Collections;
 
 import java.util.HashSet;
-import java.util.Iterator;
 
 public class HashSetExample {
     public static void main(String args[]){
