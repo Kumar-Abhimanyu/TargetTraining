@@ -15,6 +15,12 @@ fun main(){
     val maxOf = maxVal(9,19)
     println(maxOf)
     stringConcat()
+    println(2.times(3))
+
+    val pets = arrayOf("dog","cat")
+    for(pet in pets){
+        print(pet+" ")
+    }
 }
 
 fun sum(a:Int, b:Int):Int{
