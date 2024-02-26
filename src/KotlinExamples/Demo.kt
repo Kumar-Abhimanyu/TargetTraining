@@ -5,6 +5,12 @@ import kotlin.math.max
 class Demo {
 }
 
+/*
+Methods can be created using equals operator and don't require curly braces all the time
+Eg : fun sum(a:Int, b:Int): Int = a+b
+Saves up lines of code
+ */
+
 fun main(){
     val msg = "Hello world"
     println(msg)
@@ -21,6 +27,9 @@ fun main(){
     for(pet in pets){
         print(pet+" ")
     }
+
+    printMessageWithPrefix("hello","log")
+    printMessageWithPrefix(prefix = "log", message = "hello")
 }
 
 fun sum(a:Int, b:Int):Int{
@@ -40,4 +49,8 @@ fun stringConcat(){
     val numberOfDogs = 3
     val numberOfCats = 4
     println("I have $numberOfDogs dogs and $numberOfCats cats")
+}
+
+fun printMessageWithPrefix(message:String,prefix:String = "Info"){
+    println("[$prefix] $message")
 }
