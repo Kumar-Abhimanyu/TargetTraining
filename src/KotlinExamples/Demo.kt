@@ -21,10 +21,10 @@ fun sum(a:Int, b:Int):Int{
 }
 
 fun maxVal(a:Int,b:Int):Int{
-    if(a>b){
-        return a
+    return if(a>b){
+        a
     }
     else{
-        return b
+        b
     }
 }
