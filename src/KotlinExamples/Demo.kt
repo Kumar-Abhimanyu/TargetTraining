@@ -1,5 +1,7 @@
 package KotlinExamples
 
+import kotlin.math.max
+
 class Demo {
 }
 
@@ -10,8 +12,19 @@ fun main(){
     println(tEmp.age)
     val answer = sum(6,7)
     println(answer)
+    val maxOf = maxVal(9,19)
+    println(maxOf)
 }
 
 fun sum(a:Int, b:Int):Int{
     return a+b;
+}
+
+fun maxVal(a:Int,b:Int):Int{
+    if(a>b){
+        return a
+    }
+    else{
+        return b
+    }
 }
