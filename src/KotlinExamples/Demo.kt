@@ -54,3 +54,8 @@ fun stringConcat(){
 fun printMessageWithPrefix(message:String,prefix:String = "Info"){
     println("[$prefix] $message")
 }
+
+
+//The question mark is used to check safety of the null values - Prevents operations from happening if value is null
+fun nulltest(){
+}
