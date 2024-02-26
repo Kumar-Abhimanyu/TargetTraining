@@ -14,6 +14,7 @@ fun main(){
     println(answer)
     val maxOf = maxVal(9,19)
     println(maxOf)
+    stringConcat()
 }
 
 fun sum(a:Int, b:Int):Int{
@@ -27,4 +28,10 @@ fun maxVal(a:Int,b:Int):Int{
     else{
         b
     }
+}
+
+fun stringConcat(){
+    val numberOfDogs = 3
+    val numberOfCats = 4
+    println("I have $numberOfDogs dogs and $numberOfCats cats")
 }
