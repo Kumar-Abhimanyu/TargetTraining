@@ -16,7 +16,11 @@ fun main(){
     //Lambda Function
     var dirtLevel = 20
     var waterFilter = {level:Int -> level/3}
-    print(waterFilter(dirtLevel))
+    println(waterFilter(dirtLevel))
+
+    //List Filters
+    val list = listOf(1,2,3,4)
+    print(list.filter { it>1 })
 }
 
 fun tempToday(day:String, temp:Int){
