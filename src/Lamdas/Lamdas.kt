@@ -8,7 +8,8 @@ fun main(){
     println(uppercase1("hello"))
     val uppercase2 : (String)->String = {it.uppercase()}
     println(uppercase2("hello"))
-    val calResult = calculate(4,5){a,b->a*b}
+    //We can either create our own functions in curly brackets or use already created functions using the :: expression
+    val calResult = calculate(4,5){a,b->a-b}
     println(calResult)
     val sumResult = calculate(5,6, ::sum)
     println(sumResult)
